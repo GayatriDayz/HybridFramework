@@ -16,7 +16,7 @@ public class loginFb extends baseSelenium {
 	@Test(dataProvider = "LoginDemo", dataProviderClass = dataGenerators.class)
 	public void loginToFb(String username, String password) throws Exception {
 		driver.get("https://fb.com/");
-		//loginPage lp= PageFactory.initElements(driver, loginPage.class);
+		loginPage lp= PageFactory.initElements(driver, loginPage.class);
 		lp.enterUsername(username);
 		lp.enterPassword(password);
 		lp.clickLogin();
