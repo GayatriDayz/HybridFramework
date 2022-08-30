@@ -5,7 +5,12 @@
     <classes>
       <class name="org.automation.test.testcases.loginFb">
         <methods>
-          <include name="loginToFb" invocation-numbers="0 1"/>
+          <include name="setUpSuite"/>
+          <include name="loginToFb" invocation-numbers="1"/>
+          <include name="setupBeforeSuite"/>
+          <include name="ConfigFileReader"/>
+          <include name="tearDown"/>
+          <include name="flushReport"/>
         </methods>
       </class> <!-- org.automation.test.testcases.loginFb -->
     </classes>

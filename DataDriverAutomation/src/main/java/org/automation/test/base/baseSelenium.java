@@ -1,5 +1,7 @@
 package org.automation.test.base;
+
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
@@ -16,8 +18,15 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
+
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+import com.aventstack.extentreports.reporter.configuration.Theme;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class baseSelenium {
@@ -27,6 +36,18 @@ public class baseSelenium {
 	protected final String propertyFilePath = "C:/Automation/DataDriverAutomation/src/test/java/org/automation/test/configuration/configuration.properties";
 	// protected final String propertyFilePath=
 	// "C:/Automation/walletHubLatest/walletHubLatest/src/com/wallet/Configuration/Configuration.properties";
+	public ExtentReports extent;
+	public ExtentTest logger;
+
+	@BeforeSuite(alwaysRun = true)
+	public void setUpSuite() {
+		ExtentSparkReporter spark = new ExtentSparkReporter(
+				new File(System.getProperty("user.dir") + "/Report/DemoReport.html"));
+		extent = new ExtentReports();
+		spark.config().setTheme(Theme.DARK);
+		spark.config().setDocumentTitle("MyReport");
+		extent.attachReporter(spark);
+	}
 
 	@BeforeSuite(alwaysRun = true)
 	public void ConfigFileReader() {
@@ -72,30 +93,14 @@ public class baseSelenium {
 		// driver.get(BrowserURL);
 	}
 
-	public void moveToElementAndClick(By ele) {
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
-		wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(ele));
-		Actions action = new Actions(driver);
-		WebElement actionName = driver.findElement(ele);
-		action.moveToElement(actionName).click().perform();
-	}
-
-	public void click(By by) throws InterruptedException {
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
-		wait.until(ExpectedConditions.elementToBeClickable(by));
-		driver.findElement(by).click();
-		Thread.sleep(1000);
-	}
-	
-
-	public void scrollDown() {
-		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("window.scrollBy(100,450)");
-	}
-
 	@AfterClass
 	public void tearDown() {
 		driver.quit();
+	}
+
+	@AfterMethod
+	public void flushReport() {
+		extent.flush();
 	}
 
 }

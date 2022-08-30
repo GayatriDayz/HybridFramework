@@ -1,21 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-08-30T11:32:33 IST" name="Default suite" finished-at="2022-08-30T11:34:25 IST" duration-ms="112089">
+  <suite started-at="2022-08-30T18:00:25 IST" name="Suite" finished-at="2022-08-30T18:02:14 IST" duration-ms="108730">
     <groups>
     </groups>
-    <test started-at="2022-08-30T11:32:33 IST" name="Default test" finished-at="2022-08-30T11:34:25 IST" duration-ms="112089">
+    <test started-at="2022-08-30T18:00:25 IST" name="Test" finished-at="2022-08-30T18:02:14 IST" duration-ms="108730">
       <class name="org.automation.test.testcases.loginFb">
-        <test-method is-config="true" signature="ConfigFileReader()[pri:0, instance:org.automation.test.testcases.loginFb@506ae4d4]" started-at="2022-08-30T11:32:33 IST" name="ConfigFileReader" finished-at="2022-08-30T11:32:33 IST" duration-ms="8" status="PASS">
+        <test-method is-config="true" signature="ConfigFileReader()[pri:0, instance:org.automation.test.testcases.loginFb@7d4f9aae]" started-at="2022-08-30T18:00:25 IST" name="ConfigFileReader" finished-at="2022-08-30T18:00:25 IST" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ConfigFileReader -->
-        <test-method is-config="true" signature="setupBeforeSuite()[pri:0, instance:org.automation.test.testcases.loginFb@506ae4d4]" started-at="2022-08-30T11:32:33 IST" name="setupBeforeSuite" finished-at="2022-08-30T11:32:35 IST" duration-ms="1761" status="PASS">
+        <test-method is-config="true" signature="setUpSuite()[pri:0, instance:org.automation.test.testcases.loginFb@7d4f9aae]" started-at="2022-08-30T18:00:25 IST" name="setUpSuite" finished-at="2022-08-30T18:00:25 IST" duration-ms="177" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpSuite -->
+        <test-method is-config="true" signature="setupBeforeSuite()[pri:0, instance:org.automation.test.testcases.loginFb@7d4f9aae]" started-at="2022-08-30T18:00:25 IST" name="setupBeforeSuite" finished-at="2022-08-30T18:00:26 IST" duration-ms="1413" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupBeforeSuite -->
-        <test-method signature="loginToFb(java.lang.String,java.lang.String)[pri:0, instance:org.automation.test.testcases.loginFb@506ae4d4]" started-at="2022-08-30T11:32:35 IST" name="loginToFb" data-provider="LoginDemo" finished-at="2022-08-30T11:33:01 IST" duration-ms="25185" status="PASS">
+        <test-method signature="loginToFb(java.lang.String,java.lang.String)[pri:0, instance:org.automation.test.testcases.loginFb@7d4f9aae]" started-at="2022-08-30T18:00:27 IST" name="loginToFb" data-provider="LoginDemo" finished-at="2022-08-30T18:00:51 IST" duration-ms="23742" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -31,7 +35,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToFb -->
-        <test-method signature="loginToFb(java.lang.String,java.lang.String)[pri:0, instance:org.automation.test.testcases.loginFb@506ae4d4]" started-at="2022-08-30T11:33:01 IST" name="loginToFb" data-provider="LoginDemo" finished-at="2022-08-30T11:34:25 IST" duration-ms="84059" status="PASS">
+        <test-method is-config="true" signature="flushReport()[pri:0, instance:org.automation.test.testcases.loginFb@7d4f9aae]" started-at="2022-08-30T18:00:51 IST" name="flushReport" finished-at="2022-08-30T18:00:51 IST" duration-ms="656" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReport -->
+        <test-method signature="loginToFb(java.lang.String,java.lang.String)[pri:0, instance:org.automation.test.testcases.loginFb@7d4f9aae]" started-at="2022-08-30T18:00:51 IST" name="loginToFb" data-provider="LoginDemo" finished-at="2022-08-30T18:02:13 IST" duration-ms="81988" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -47,11 +55,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToFb -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.automation.test.testcases.loginFb@506ae4d4]" started-at="2022-08-30T11:34:25 IST" name="tearDown" finished-at="2022-08-30T11:34:25 IST" duration-ms="377" status="PASS">
+        <test-method is-config="true" signature="flushReport()[pri:0, instance:org.automation.test.testcases.loginFb@7d4f9aae]" started-at="2022-08-30T18:02:13 IST" name="flushReport" finished-at="2022-08-30T18:02:13 IST" duration-ms="51" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReport -->
+        <test-method signature="logOut()[pri:2, instance:org.automation.test.testcases.loginFb@7d4f9aae]" started-at="2022-08-30T18:02:13 IST" name="logOut" finished-at="2022-08-30T18:02:13 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOut -->
+        <test-method is-config="true" signature="flushReport()[pri:0, instance:org.automation.test.testcases.loginFb@7d4f9aae]" started-at="2022-08-30T18:02:13 IST" name="flushReport" finished-at="2022-08-30T18:02:13 IST" duration-ms="15" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReport -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.automation.test.testcases.loginFb@7d4f9aae]" started-at="2022-08-30T18:02:13 IST" name="tearDown" finished-at="2022-08-30T18:02:14 IST" duration-ms="313" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- org.automation.test.testcases.loginFb -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

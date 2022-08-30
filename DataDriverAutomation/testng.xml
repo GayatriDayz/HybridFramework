@@ -3,8 +3,8 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="org.automation.test.datagenerators.dataGenerators"/>
-      <class name="org.automation.test.base.baseSelenium"/>
+<!--      <class name="org.automation.test.datagenerators.dataGenerators"/>-->
+<!--      <class name="org.automation.test.base.baseSelenium"/>-->
       <class name="org.automation.test.testcases.loginFb"/>
     </classes>
   </test> <!-- Test -->
