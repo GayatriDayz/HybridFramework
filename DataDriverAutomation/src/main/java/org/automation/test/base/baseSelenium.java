@@ -1,12 +1,10 @@
 package org.automation.test.base;
-
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.time.Duration;
 import java.util.Properties;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -20,7 +18,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
-
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class baseSelenium {
@@ -81,7 +78,6 @@ public class baseSelenium {
 		Actions action = new Actions(driver);
 		WebElement actionName = driver.findElement(ele);
 		action.moveToElement(actionName).click().perform();
-
 	}
 
 	public void click(By by) throws InterruptedException {
@@ -90,7 +86,6 @@ public class baseSelenium {
 		driver.findElement(by).click();
 		Thread.sleep(1000);
 	}
-
 	
 
 	public void scrollDown() {

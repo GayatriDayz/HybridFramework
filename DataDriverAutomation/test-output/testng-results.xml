@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-08-29T18:33:34 IST" name="Default suite" finished-at="2022-08-29T18:34:38 IST" duration-ms="64198">
+  <suite started-at="2022-08-30T11:32:33 IST" name="Default suite" finished-at="2022-08-30T11:34:25 IST" duration-ms="112089">
     <groups>
     </groups>
-    <test started-at="2022-08-29T18:33:34 IST" name="Default test" finished-at="2022-08-29T18:34:38 IST" duration-ms="64198">
+    <test started-at="2022-08-30T11:32:33 IST" name="Default test" finished-at="2022-08-30T11:34:25 IST" duration-ms="112089">
       <class name="org.automation.test.testcases.loginFb">
-        <test-method is-config="true" signature="ConfigFileReader()[pri:0, instance:org.automation.test.testcases.loginFb@6bd61f98]" started-at="2022-08-29T18:33:34 IST" name="ConfigFileReader" finished-at="2022-08-29T18:33:34 IST" duration-ms="13" status="PASS">
+        <test-method is-config="true" signature="ConfigFileReader()[pri:0, instance:org.automation.test.testcases.loginFb@506ae4d4]" started-at="2022-08-30T11:32:33 IST" name="ConfigFileReader" finished-at="2022-08-30T11:32:33 IST" duration-ms="8" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ConfigFileReader -->
-        <test-method is-config="true" signature="setupBeforeSuite()[pri:0, instance:org.automation.test.testcases.loginFb@6bd61f98]" started-at="2022-08-29T18:33:34 IST" name="setupBeforeSuite" finished-at="2022-08-29T18:33:40 IST" duration-ms="5473" status="PASS">
+        <test-method is-config="true" signature="setupBeforeSuite()[pri:0, instance:org.automation.test.testcases.loginFb@506ae4d4]" started-at="2022-08-30T11:32:33 IST" name="setupBeforeSuite" finished-at="2022-08-30T11:32:35 IST" duration-ms="1761" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupBeforeSuite -->
-        <test-method signature="loginToFb(java.lang.String,java.lang.String)[pri:0, instance:org.automation.test.testcases.loginFb@6bd61f98]" started-at="2022-08-29T18:33:41 IST" name="loginToFb" data-provider="LoginDemo" finished-at="2022-08-29T18:34:04 IST" duration-ms="23597" status="PASS">
+        <test-method signature="loginToFb(java.lang.String,java.lang.String)[pri:0, instance:org.automation.test.testcases.loginFb@506ae4d4]" started-at="2022-08-30T11:32:35 IST" name="loginToFb" data-provider="LoginDemo" finished-at="2022-08-30T11:33:01 IST" duration-ms="25185" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -31,7 +31,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToFb -->
-        <test-method signature="loginToFb(java.lang.String,java.lang.String)[pri:0, instance:org.automation.test.testcases.loginFb@6bd61f98]" started-at="2022-08-29T18:34:04 IST" name="loginToFb" data-provider="LoginDemo" finished-at="2022-08-29T18:34:38 IST" duration-ms="33622" status="PASS">
+        <test-method signature="loginToFb(java.lang.String,java.lang.String)[pri:0, instance:org.automation.test.testcases.loginFb@506ae4d4]" started-at="2022-08-30T11:33:01 IST" name="loginToFb" data-provider="LoginDemo" finished-at="2022-08-30T11:34:25 IST" duration-ms="84059" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -47,7 +47,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToFb -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.automation.test.testcases.loginFb@6bd61f98]" started-at="2022-08-29T18:34:38 IST" name="tearDown" finished-at="2022-08-29T18:34:38 IST" duration-ms="222" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.automation.test.testcases.loginFb@506ae4d4]" started-at="2022-08-30T11:34:25 IST" name="tearDown" finished-at="2022-08-30T11:34:25 IST" duration-ms="377" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
