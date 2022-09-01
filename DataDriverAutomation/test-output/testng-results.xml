@@ -1,77 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-08-30T18:00:25 IST" name="Suite" finished-at="2022-08-30T18:02:14 IST" duration-ms="108730">
+  <suite started-at="2022-09-01T15:24:54 IST" name="Default suite" finished-at="2022-09-01T15:24:56 IST" duration-ms="1773">
     <groups>
     </groups>
-    <test started-at="2022-08-30T18:00:25 IST" name="Test" finished-at="2022-08-30T18:02:14 IST" duration-ms="108730">
+    <test started-at="2022-09-01T15:24:54 IST" name="Default test" finished-at="2022-09-01T15:24:56 IST" duration-ms="1773">
       <class name="org.automation.test.testcases.loginFb">
-        <test-method is-config="true" signature="ConfigFileReader()[pri:0, instance:org.automation.test.testcases.loginFb@7d4f9aae]" started-at="2022-08-30T18:00:25 IST" name="ConfigFileReader" finished-at="2022-08-30T18:00:25 IST" duration-ms="5" status="PASS">
+        <test-method is-config="true" signature="ConfigFileReader()[pri:0, instance:org.automation.test.testcases.loginFb@4c1909a3]" started-at="2022-09-01T15:24:54 IST" name="ConfigFileReader" finished-at="2022-09-01T15:24:54 IST" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ConfigFileReader -->
-        <test-method is-config="true" signature="setUpSuite()[pri:0, instance:org.automation.test.testcases.loginFb@7d4f9aae]" started-at="2022-08-30T18:00:25 IST" name="setUpSuite" finished-at="2022-08-30T18:00:25 IST" duration-ms="177" status="PASS">
+        <test-method is-config="true" signature="setUpSuite()[pri:0, instance:org.automation.test.testcases.loginFb@4c1909a3]" started-at="2022-09-01T15:24:54 IST" name="setUpSuite" finished-at="2022-09-01T15:24:54 IST" duration-ms="231" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpSuite -->
-        <test-method is-config="true" signature="setupBeforeSuite()[pri:0, instance:org.automation.test.testcases.loginFb@7d4f9aae]" started-at="2022-08-30T18:00:25 IST" name="setupBeforeSuite" finished-at="2022-08-30T18:00:26 IST" duration-ms="1413" status="PASS">
+        <test-method is-config="true" signature="setupBeforeSuite()[pri:0, instance:org.automation.test.testcases.loginFb@4c1909a3]" started-at="2022-09-01T15:24:54 IST" name="setupBeforeSuite" finished-at="2022-09-01T15:24:56 IST" duration-ms="1544" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupBeforeSuite -->
-        <test-method signature="loginToFb(java.lang.String,java.lang.String)[pri:0, instance:org.automation.test.testcases.loginFb@7d4f9aae]" started-at="2022-08-30T18:00:27 IST" name="loginToFb" data-provider="LoginDemo" finished-at="2022-08-30T18:00:51 IST" duration-ms="23742" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[username]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[password]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="loginToFb(java.lang.String,java.lang.String)[pri:0, instance:org.automation.test.testcases.loginFb@4c1909a3]" started-at="2022-09-01T15:24:56 IST" name="loginToFb" data-provider="LoginDemo" finished-at="2022-09-01T15:24:56 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.NoClassDefFoundError: org/apache/commons/io/output/UnsynchronizedByteArrayOutputStream]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.lang.NoClassDefFoundError: org/apache/commons/io/output/UnsynchronizedByteArrayOutputStream
+at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:50)
+at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:146)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:798)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:791)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.NoClassDefFoundError: org/apache/commons/io/output/UnsynchronizedByteArrayOutputStream
+at org.automation.test.datagenerators.dataGenerators.testDataGenerator(dataGenerators.java:20)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:77)
+at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:46)
+... 25 more
+Caused by: java.lang.ClassNotFoundException: org.apache.commons.io.output.UnsynchronizedByteArrayOutputStream
+at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+... 33 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToFb -->
-        <test-method is-config="true" signature="flushReport()[pri:0, instance:org.automation.test.testcases.loginFb@7d4f9aae]" started-at="2022-08-30T18:00:51 IST" name="flushReport" finished-at="2022-08-30T18:00:51 IST" duration-ms="656" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- flushReport -->
-        <test-method signature="loginToFb(java.lang.String,java.lang.String)[pri:0, instance:org.automation.test.testcases.loginFb@7d4f9aae]" started-at="2022-08-30T18:00:51 IST" name="loginToFb" data-provider="LoginDemo" finished-at="2022-08-30T18:02:13 IST" duration-ms="81988" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[gayatri28081990@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Gayatri@2808]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginToFb -->
-        <test-method is-config="true" signature="flushReport()[pri:0, instance:org.automation.test.testcases.loginFb@7d4f9aae]" started-at="2022-08-30T18:02:13 IST" name="flushReport" finished-at="2022-08-30T18:02:13 IST" duration-ms="51" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- flushReport -->
-        <test-method signature="logOut()[pri:2, instance:org.automation.test.testcases.loginFb@7d4f9aae]" started-at="2022-08-30T18:02:13 IST" name="logOut" finished-at="2022-08-30T18:02:13 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logOut -->
-        <test-method is-config="true" signature="flushReport()[pri:0, instance:org.automation.test.testcases.loginFb@7d4f9aae]" started-at="2022-08-30T18:02:13 IST" name="flushReport" finished-at="2022-08-30T18:02:13 IST" duration-ms="15" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- flushReport -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.automation.test.testcases.loginFb@7d4f9aae]" started-at="2022-08-30T18:02:13 IST" name="tearDown" finished-at="2022-08-30T18:02:14 IST" duration-ms="313" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.automation.test.testcases.loginFb@4c1909a3]" started-at="2022-09-01T15:24:56 IST" name="tearDown" finished-at="2022-09-01T15:24:56 IST" duration-ms="187" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- org.automation.test.testcases.loginFb -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
